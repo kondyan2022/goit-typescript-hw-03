@@ -27,7 +27,7 @@ abstract class House {
 }
 
 class MyHouse extends House {
-  openDoor(key: Key) {
+  openDoor(key: Key): void {
     this.door = this.key.getSignature() === key.getSignature();
   }
 }
